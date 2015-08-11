@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode6.4
 xcode_sdk: iphonesimulator8.4
 xcode_project: MockingUserDefaults.xcodeproj
-xcode_scheme: MockingUserDefaults
+xcode_scheme: MockingUserDefaultsTests
