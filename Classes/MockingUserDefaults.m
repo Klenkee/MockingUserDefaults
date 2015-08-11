@@ -19,7 +19,11 @@
 
 @end
 
-/// Inline method to check if the object has a valid type for NSUserDefaults
+/**
+ Inline method to check if the object has a valid type for NSUserDefaults
+ @param object The object to check the type for
+ @return BOOL Whether object is a plist type or not
+ */
 static inline BOOL IsPlistType(NSObject *object)
 {
     if ([object isKindOfClass:[NSString class]] ||

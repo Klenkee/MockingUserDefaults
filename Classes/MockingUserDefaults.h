@@ -10,6 +10,10 @@
 
 @interface NSUserDefaults (Mocking)
 
+/**
+ NSUserDefaults category class method to return a MockingUserDefaults instance masked as NSUserDefaults instance.
+ @return MockingUserDefaults instance masked as NSUserDefaults instance
+ */
 + (NSUserDefaults *)mockingDefaults;
 
 @end
