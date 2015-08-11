@@ -75,11 +75,9 @@ static inline BOOL IsPlistType(NSObject *object)
 - (id)init
 {
     self = [super init];
-    if (self == nil) {
-        return nil;
+    if (self) {
+        self.mockingData = [NSMutableDictionary dictionary];
     }
-    
-    self.mockingData = [NSMutableDictionary dictionary];
     return self;
 }
 
