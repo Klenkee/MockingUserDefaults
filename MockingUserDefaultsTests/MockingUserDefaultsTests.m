@@ -337,6 +337,14 @@
     XCTAssertEqualObjects(returnedURL, testURL);
 }
 
+- (void)testURLForKeyInvalidValue
+{
+    NSData *testObject = [NSKeyedArchiver archivedDataWithRootObject:@"objectToTest"];
+    [self.mockingUserDefaults setObject:testObject forKey:@"keyToTest"];
+    NSURL *returnedURL = [self.mockingUserDefaults URLForKey:@"keyToTest"];
+    XCTAssertNil(returnedURL);
+}
+
 - (void)testURLForKeyNonAvaiableKey
 {
     XCTAssertNil([self.mockingUserDefaults URLForKey:@"keyToTest"]);
