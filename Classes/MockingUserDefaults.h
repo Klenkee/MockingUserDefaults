@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Eike Klenk. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 @interface NSUserDefaults (Mocking)
 
