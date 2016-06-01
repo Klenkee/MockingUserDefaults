@@ -7,7 +7,7 @@
 
 ##Installation
 
-###Cocoapods
+###CocoaPods
 
 `MockingUserDefaults` is available through [CocoaPods](https://cocoapods.org/pods/MockingUserDefaults). To install
 it, simply add the following line to your Podfile:
