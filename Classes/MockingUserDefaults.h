@@ -125,4 +125,10 @@
  */
 - (BOOL)synchronize;
 
+/**
+ Override the dictionaryRepresentation method from NSUserDefaults.
+ */
+- (NSDictionary<NSString *,id> *)dictionaryRepresentation;
+
+
 @end

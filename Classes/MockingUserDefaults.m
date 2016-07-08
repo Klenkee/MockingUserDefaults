@@ -292,5 +292,10 @@ static inline BOOL IsPlistType(NSObject *object)
     return YES;
 }
 
+- (NSDictionary<NSString *,id> *)dictionaryRepresentation
+{
+    return [NSDictionary dictionaryWithDictionary:self.mockingData];
+}
+
 
 @end

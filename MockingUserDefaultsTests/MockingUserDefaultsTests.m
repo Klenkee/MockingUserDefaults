@@ -364,5 +364,11 @@
     XCTAssertTrue([self.mockingUserDefaults synchronize]);
 }
 
+- (void)testDictionaryRepresentation
+{
+    NSString* testObject = @"stringToTest";
+    [self.mockingUserDefaults setObject:testObject forKey:@"keyToTest"];
+    XCTAssertEqualObjects([self.mockingUserDefaults dictionaryRepresentation], @{@"keyToTest": testObject});
+}
 
 @end
